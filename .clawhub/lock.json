@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "tavily-search-pro": {
+      "version": "1.0.0",
+      "installedAt": 1775203203819
+    },
+    "stealth-browser": {
+      "version": "1.0.0",
+      "installedAt": 1775203503042
+    }
+  }
+}

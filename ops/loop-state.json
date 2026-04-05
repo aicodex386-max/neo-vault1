@@ -1,0 +1,12 @@
+{
+  "status": "idle",
+  "target": null,
+  "op_name": null,
+  "loop_count": 0,
+  "max_loops": 5,
+  "escalation_level": "passive",
+  "active_agent": null,
+  "last_activity": null,
+  "confidence_score": null,
+  "diminishing_returns": false
+}
