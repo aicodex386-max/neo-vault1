@@ -15,7 +15,32 @@
 - **Created:** ~/neo_vault as secure workspace
 - **Operational rules:** See AGENTS.md "Operational Protocol (Ed's Rules)" section
 
-## Key Context
+## Red Team Squad (Ed's)
+
+| Agent | Skill | Role |
+|-------|-------|------|
+| **Trinity** 🔍 | trinity-recon | Recon + Silent Vector discovery, recursive learning on Phantom failure |
+| **Phantom** 💥 | phantom-exploit | Exploitation + Heuristic Evasion Engine, self-learning failure log |
+| **Neo** 🤖 | autonomous-loop | Orchestrator — scope enforcement, confidence scoring, diminishing returns, low-noise priority, error handling, post-exploit gate |
+
+### Pipeline
+- Trinity → Phantom → on failure: Trinity Silent Vector re-scan → Phantom pivots → repeat
+- Neo monitors via loop-state.json heartbeat
+- All results saved to ~/neo_vault/recon/[TARGET]/[DATE]/
+- Post-exploit (post-shell): Trinity only runs on Ed's approval
+
+### Ops Infrastructure
+- Scope files: ~/.openclaw/workspace/ops/scope/[op-name].txt
+- Loop state: ~/.openclaw/workspace/ops/loop-state.json
+- Loop log: ~/.openclaw/workspace/ops/loop-log.json
+- Heartbeat: reads HEARTBEAT.md every ~30min, runs autonomous loop monitor
+
+### Key Files
+- skills/trinity-recon/SKILL.md
+- skills/phantom-exploit/SKILL.md
+- skills/autonomous-loop/SKILL.md
+- ops/loop-state.json
+- ops/loop-log.json
 
 - Tavily API key: configured in OpenClaw env (do not share)
 - Stealth Browser: installed but flagged suspicious by ClawHub — use with caution
