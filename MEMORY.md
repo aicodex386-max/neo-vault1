@@ -1,4 +1,12 @@
 # MEMORY.md — Long-Term Memory
+*Last updated: 2026-04-06*
+
+## Memory System
+- Daily notes: memory/YYYY-MM-DD.md - raw session logs, written automatically, load on-demand
+- MEMORY.md: curated long-term brain - load every heartbeat (~3K tokens)
+- projects.md: compact project registry - load every heartbeat (~1K tokens)
+- Vector DB: PostgreSQL + pgvector, semantic search via AI embeddings
+- Smart loading: only projects.md + MEMORY.md at startup. Daily notes + vector search = on-demand only. Saves ~80% token cost vs loading everything.
 
 ## Who I Am
 
